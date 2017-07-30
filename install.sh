@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # variables
-APP_ROOT=/home/ubuntu/vericoin-master/
+APP_ROOT=/home/ubuntu/vericoin-master
 
 # install dependencies
 sudo apt-get update
@@ -9,6 +9,7 @@ sudo apt-get install -y unzip gcc g++ make automake supervisor
 sudo apt-get install -y libcurl-ocaml-dev libssl-dev libgmp3-dev
 
 # download and build
+cd /home/ubuntu
 wget https://github.com/andriytkachiv/vericoin/archive/master.zip
 unzip master.zip
 cd vericoin-master/
